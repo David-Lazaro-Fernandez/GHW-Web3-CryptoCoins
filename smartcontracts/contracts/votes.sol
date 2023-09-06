@@ -1,10 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract MyContract {
-    string public value = "Hello, Blockchain!";
+contract HelloWorld {
+    string public message;
 
-    function setValue(string memory _value) public {
-        value = _value;
+    constructor() {
+        message = "Hello, World!";
+    }
+
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
     }
 }
